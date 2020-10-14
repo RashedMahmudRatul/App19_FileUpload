@@ -1,0 +1,18 @@
+﻿@model IEnumerable<string>
+
+<h2 class="alert alert-info" > Uploaded Images </h2>
+@if (Model!=null)
+{
+<div class="row">
+    <div class="col-md-4">
+        <ul>
+            @foreach (var f in Model)
+            {
+                <li>
+                    <img src="@f" alt="Image" style="width: 1000px" />
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+}
